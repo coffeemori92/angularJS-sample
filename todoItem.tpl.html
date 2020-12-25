@@ -1,0 +1,7 @@
+<div>
+  <h3>{{ todo.title }}</h3>
+  <input type="text" ng-model="todo.title">
+  <input type="checkbox" ng-model="todo.completed">
+  <p>{{ todo.createdAt | date: 'yyyy-MM-dd hh:mm:ss'}}</p>
+</div>
+<button ng-click="remove(todo)">삭제</button>
